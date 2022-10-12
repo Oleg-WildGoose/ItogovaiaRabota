@@ -3,7 +3,7 @@
 // При решение не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами
 
 string[] array1 = new string[5] {"hello", "2", "world", ":-)", "yes"};
-PrintArray(array1);
+Console.Write("["); PrintArray(array1); Console.Write("]");
 string[] array2 = new string[array1.Length];
 void SecondArrayWithIF(string[] array1, string[] array2)
 {
@@ -24,3 +24,7 @@ void PrintArray(string[] array)
         Console.Write($"{array[i]} ");
     }
 }
+SecondArrayWithIF(array1,array2);
+Console.Write("[");
+PrintArray(array2);
+Console.Write("]");
